@@ -2,7 +2,6 @@ import os
 from discord.ext import commands
 import random
 bot = commands.Bot(command_prefix='.')
-from keep_alive import keep_alive
 
 async def on_ready():
     print ("Ready")
@@ -52,5 +51,4 @@ async def roll(ctx, *players):
   
   return
 
-keep_alive()
 bot.run(os.getenv('TOKEN'))
